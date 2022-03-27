@@ -104,12 +104,14 @@ def switchCounter(push_count):
         if status == True:
             print ('switch on')
             push_count += 1
+            
         else:
             print ('switch off')
         cur_status = status
 
         # wait 0.5sec
     time.sleep(0.6)
+    #here!
     return push_count
 
 
@@ -221,7 +223,7 @@ while True:
         time.sleep(3)
 
 
-        feed_sequence()
+        
         #json that adds line with status = 0
         cnx = mysql.connector.connect(host ="mysql.studev.groept.be", user="a21ib2a03", password="secret")
         cursor = cnx.cursor()
