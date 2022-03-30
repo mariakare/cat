@@ -18,8 +18,8 @@ def convert_wght(gen):
 #check to see if scale is measuring
 adc = MCP3008(channel=0)
 i = 7
-for temp in convert_wght(adc.values):
-    print(temp)
+for wght in convert_wght(adc.values):
+    print(wght)
     break
 
 #returns the last measured value
